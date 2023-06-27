@@ -22,7 +22,7 @@ if place:
         dates = [dict["dt_txt"] for dict in filtered_data]
         figure = px.line(x=dates, y=temperatures, labels={"x": "Date", "y": "Temperature(c)"})
         st.plotly_chart(figure)
-
+#print
     if option == "Sky":
         images = {"Clear": "images/clear.png", "Clouds": "images/cloud.png",
                   "Rain": "images/rain.png", "Snow": "images/snow.png"}
